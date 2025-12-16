@@ -60,6 +60,16 @@ export const TextNode = ({ id, data }) => {
         </label>
       </div>
 
+      {/* Always render a default target handle on the left */}
+      {variables.length === 0 && (
+        <Handle
+          type="target"
+          position={Position.Left}
+          id={`${id}-value`}
+          style={{ top: '50%' }}
+        />
+      )}
+
       {/* Dynamic target handles on the left for each variable */}
       {variables.map((variable, index) => {
         const topPosition = variables.length === 1
