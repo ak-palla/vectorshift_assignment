@@ -1,0 +1,83 @@
+.vs-node {
+  width: 220px;
+  min-height: 80px;
+  border-radius: 8px;
+  border: 1px solid #d0d7de;
+  background-color: #0b1120;
+  color: #e5e7eb;
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.4);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  overflow: hidden;
+}
+
+.vs-node-header {
+  padding: 6px 10px;
+  border-bottom: 1px solid #1f2937;
+  background: linear-gradient(90deg, #111827, #1f2937);
+}
+
+.vs-node-title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #a5b4fc;
+}
+
+.vs-node-body {
+  padding: 8px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.vs-node-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.75rem;
+}
+
+.vs-node-label {
+  color: #9ca3af;
+}
+
+.vs-node-input,
+.vs-node-textarea {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #374151;
+  background-color: #020617;
+  color: #e5e7eb;
+  padding: 4px 6px;
+  font-size: 0.75rem;
+}
+
+.vs-node-input:focus,
+.vs-node-textarea:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 1px rgba(99, 102, 241, 0.5);
+}
+
+.vs-node-textarea {
+  resize: vertical;
+  min-height: 54px;
+}
+
+/* Text node specific styles for dynamic sizing */
+.text-node {
+  width: auto;
+  min-width: 220px;
+  max-width: 400px;
+}
+
+.text-node-textarea {
+  resize: none;
+  overflow: hidden;
+  min-height: 30px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
